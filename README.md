@@ -15,5 +15,6 @@ The imaage below shows the layout of the web page.
 ## Summary
 The page works well with the supplied date.  However, it could be improved in at least 2 ways. 1.  if the form allowed users to enter comments the page would be more interactive.  Also, the page does not have a mechanism to add new sightings to the database interactively.
 
-![image_name]main_page.PNG)
+![image_name](https://github.com/jbates2549/UFOs/blob/main/main_page.PNG)
+
 
