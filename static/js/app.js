@@ -34,16 +34,16 @@ function updateFilters() {
     let changedElement = d3.select(this);
 
     // 4b. Save the value that was changed as a variable.
-    let elementValue = ChangedElement.property("value");
+    let elementValue = changedElement.property("value");
     console.log(elementValue);
     // 4c. Save the id of the filter that was changed as a variable.
     let filterid = changedElement.attr("id");
-    console.log(filterId);
+    // console.log(filterId);
 
     // 5. If a filter value was entered then add that filterId and value
     // to the filters list. Otherwise, clear that filter from the filters object.
     if (elementValue) {
-      filters[filterId] = elementvValue;
+      filters[filterId] = elementValue;
 
     }
     else {
@@ -57,12 +57,12 @@ function updateFilters() {
     
     filterTable();
     
-  
+}
   
   // 7. Use this function to filter the table when data is entered.
   function filterTable() {
 
-    }
+    
   
   
     // 8. Set the filtered data to the tableData.
@@ -70,7 +70,9 @@ function updateFilters() {
   
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values
-    
+    Object.defineProperties(filters).forEach(([key, value]) => {
+      filteredData = filteredData.filter(row => row[key] === value);
+    });
       // Apply `filter` to the table data to only keep the
       // rows where the `datetime` value matches the filter value
       
