@@ -6,10 +6,10 @@ For this analysis we used Javascript and HTML to develop a web page that allows 
 
 ## Results
 The imaage below shows the layout of the web page.  
-*  Users can select City, State, Country or shape to filter the results for specific criteria.
+*  Users can select Date, City, State, Country or shape to filter the results for specific criteria.
 *  Multiple filters can be used to filter the data by both location and shape.
-*  The page will load all data by default.
-*  Overall, the temperatures were in a comfortable range for customers to patronize the shop.
+*  The page will load all data by default when no filters are selected.
+
 
 
 ## Summary
